@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="../styles/noticias_style.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <a class="ir-arriba"  href="#" title="Volver arriba">&#8679;</a>
+    <nav class="botones">
+        <button title="Volver a inicio" id="volver-index"><img src="../images/flecha-volver-atras.png" width="60px" alt="Últimas noticias"></button>
+        <button title="Últimas noticias" id="primera-division"><img src="../images/ultimas-noticias.png" width="158px" alt="Últimas noticias"></button>
+        <button title="Alavés" id="alaves"><img src="../images/equipos/alaves.png" width="60px" alt="Alavés"></button>
+        <button title="Athletic de Bilbao" id="athletic"><img src="../images/equipos/athletic.png" width="60px" alt="Athletic de Bilbao"></button>
+        <button title="Atlético de Madrid" id="atletico"><img src="../images/equipos/atletico.png" width="60px" alt="Atlético de Madrid"></button>
+        <button title="Barcelona" id="barcelona"><img src="../images/equipos/barcelona.png" width="60px" alt="Barcelona"></button>
+        <button title="Betis" id="betis"><img src="../images/equipos/betis.png" width="60px" alt="Betis"></button>
+        <button title="Celta" id="celta"><img src="../images/equipos/celta.png" width="60px" alt="Celta"></button>
+        <button title="SD Eibar" id="eibar"><img src="../images/equipos/eibar.png" width="60px" alt="Eibar"></button>
+        <button title="Español RCE" id="espanyol"><img src="../images/equipos/espanyol.png" width="60px" alt="Español"></button>
+        <button title="Getafe C.F." id="getafe"><img src="../images/equipos/getafe.png" width="60px" alt="Getafe"></button>
+        <button title="Granada C.F." id="granada"><img src="../images/equipos/granada.png" width="60px" alt="Granada"></button>
+        <button title="CD Leganés" id="leganes"><img src="../images/equipos/leganes.png" width="60px" alt="Leganes"></button>
+        <button title="Levante" id="levante"><img src="../images/equipos/levante.png" width="60px" alt="Levante"></button>
+        <button title="RCD Mallorca" id="mallorca"><img src="../images/equipos/mallorca.png" width="60px" alt="Mallorca"></button>
+        <button title="CA Osasuna" id="osasuna"><img src="../images/equipos/osasuna.png" width="60px" alt="Osasuna"></button>
+        <button title="Real Madrid" id="real-madrid"><img src="../images/equipos/realMadrid.png" width="60px" alt="Real Madrid"></button>
+        <button title="Real Sociedad" id="real-sociedad"><img src="../images/equipos/realSociedad.png" width="60px" alt="Real Sociedad"></button>
+        <button title="Sevilla F.C." id="sevilla"><img src="../images/equipos/sevilla.png" width="60px" alt="Sevilla"></button>
+        <button title="Valencia C.F." id="valencia"><img src="../images/equipos/valencia.png" width="60px" alt="Valencia"></button>
+        <button title="Real Valladolid" id="valladolid"><img src="../images/equipos/valladolid.png" width="60px" alt="Valladolid"></button>
+        <button title="Villarreal" id="villarreal"><img src="../images/equipos/villarreal.png" width="60px" alt="Villarreal"></button>
+    </nav>
+    <br>
+    <div id="noticias"></div>
+    <script>
+        //Cambiamos el title, comprobamos si se ha elegido as o marca y creamos el script
+        if (location.search.substring(1,location.search.length).split("=")[1]=="as"){
+            document.getElementsByTagName("title")[0].textContent="Lector RSS - Noticias AS";
+            var script=document.createElement("script");
+            script.setAttribute("src","as_noticias.js");
+            document.getElementsByTagName("body")[0].appendChild(script);
+        } else if (location.search.substring(1,location.search.length).split("=")[1]=="marca"){
+            document.getElementsByTagName("title")[0].textContent="RSS MarcAs - Noticias Marca";
+            var script=document.createElement("script");
+            script.setAttribute("src","marca_noticias.js");
+            document.getElementsByTagName("body")[0].appendChild(script);
+        }
+
+        // Botón subir arriba
+        $('.ir-arriba').click(function () {
+            $('html, body').animate({
+                scrollTop: '0px'
+            }, 600);
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.ir-arriba').fadeIn("slow");
+            } else {
+                $('.ir-arriba').fadeOut("slow");
+            }
+        });
+
+    </script>
+</body>
+</html>

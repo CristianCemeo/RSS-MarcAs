@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    background-color: darkred;
+    top:0;
+    width: 100%;
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+#contPrincipal{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+#images{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 250px;
+    height: 75px;
+}
+footer{
+    color: white;
+    background-color: darkred;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+a{
+    color: white;
+}
+#as{
+    margin-left: 70px;
+}

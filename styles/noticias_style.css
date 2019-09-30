@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    background-color: black;
+    text-align: center;
+}
+.ir-arriba {
+    display: none;
+    padding:20px 30px;
+    background:rgb(39, 39, 39);
+    font-size:40px;
+    color:#fff;
+    cursor:pointer;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    text-decoration: none;
+}
+.ir-arriba:hover {
+    color: tomato;
+}
+button:hover{
+    cursor: pointer;
+}
+nav{
+    display:flex;
+    justify-content: center;
+}
+nav>button{
+    flex-flow: row wrap;
+    background-color: black;
+    border-color: gray;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    text-decoration: underline;
+    color:tomato;
+}
+h2{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+legend{
+    color: white;
+}
+fieldset{
+    margin-top: 20px;
+}
+div{
+    position:absolute;
+    left:50%;
+    transform:translatex(-50%);
+}
+div>fieldset{
+    background-color: rgb(39, 39, 39);
+}
+div>fieldset>a>button{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+fieldset>img{
+    width: 450px;
+}
+#leerNoticia:hover{
+    background-color: tomato;
+    color: black;
+}
+
+
+@media screen and (max-width: 1700px){
+    
+    nav{
+        display: block;
+    }
+}
