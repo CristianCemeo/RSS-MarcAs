@@ -8,4 +8,4 @@ Al acceder a la web, se podrá elegir entre dos fuentes, Marca o AS.
 Pulsando en el siguiente enlace: https://rss-marcas.000webhostapp.com/
 <br>
 <br>
-<img href="https://github.com/CristianCemeo/RSS-MarcAs/blob/master/images/RSS-MarcAs-index.jpg">
+<img src="https://github.com/CristianCemeo/RSS-MarcAs/blob/master/images/RSS-MarcAs-index.jpg">
