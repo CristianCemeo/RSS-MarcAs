@@ -1,5 +1,5 @@
 <h3>¿Qué es RSS-MarcAs?</h3>
-Es una web creada para leer rapidamente las noticias (titular y pequeña descripción) de los equipos de primera división española.
+Es una web creada para leer rapidamente las noticias (titular y pequeña descripción) de los equipos de la primera división española de fútbol.
 <br>
 <h3>¿De qué fuente provienen las noticias?</h3>
 Al acceder a la web, se podrá elegir entre dos fuentes, Marca o AS.
